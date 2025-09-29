@@ -26,6 +26,7 @@ import Calendar from "../Calendar/Calendar";
 const categories = ["Web Design", "Research", "Copywriting"];
 
 function TaskModal({ onCreateTask }) { // Убраны isOpen и onClose
+  console.log('запуск создания страницы')
   const [formData, setFormData] = useState({
     title: "",
     description: "",

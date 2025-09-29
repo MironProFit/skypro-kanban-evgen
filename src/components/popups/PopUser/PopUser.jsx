@@ -12,7 +12,7 @@ import { useNavigate } from 'react-router-dom';
 
 function PopUser({
   isOpen,
-  setIsAuth,
+  // setIsAuth,
   userName = 'Пользователь',
   userEmail = 'email@example.com',
   theme,

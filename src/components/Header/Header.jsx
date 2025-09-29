@@ -21,7 +21,9 @@ function Header({ setIsAuth, onToggleTheme, token, setTasks }) {
         const parsed = JSON.parse(userInfo);
         setUserName(parsed.user?.name || parsed.name || 'Пользователь');
         setUserEmail(parsed.user?.login || parsed.login || 'email@example.com');
-      } catch (err) {}
+      } catch (err) {
+        console.error(err.message)
+      }
     }
   }, []);
 
